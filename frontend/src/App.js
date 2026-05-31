@@ -10,6 +10,7 @@ import GalleryPage from "@/pages/GalleryPage";
 import AboutPage from "@/pages/AboutPage";
 import ContactPage from "@/pages/ContactPage";
 import WhatsAppFab from "@/components/WhatsAppFab";
+import IntroPreloader from "@/components/IntroPreloader";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -31,6 +32,10 @@ function AnimatedRoutes() {
 function App() {
   return (
     <div className="App grain min-h-screen bg-background text-foreground">
+      <div style={{position:'fixed', top:0, left:0, zIndex: 9999, background: 'red', color:'white', padding:'8px', fontSize:'12px'}} data-testid="debug-mount">
+        DEBUG: App mounted
+      </div>
+      <IntroPreloader />
       <BrowserRouter>
         <AnimatedRoutes />
         <WhatsAppFab />
