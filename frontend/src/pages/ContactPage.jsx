@@ -110,11 +110,11 @@ const ContactPage = () => {
 
           <div className="p-6 rounded-2xl border border-amber/40 bg-amber/10">
             <p className="text-xs uppercase tracking-[0.25em] text-amber mb-2">
-              ⌬ CS Live
+              ⌬ Chat Langsung
             </p>
             <p className="text-white font-medium">
-              Butuh jawaban cepat? Klik widget chat CS Asta Creative di pojok
-              kanan bawah — terhubung dengan AI assistant kami 24/7.
+              Mau respon paling cepat? Klik tombol WhatsApp di pojok kanan
+              bawah — langsung terhubung dengan tim CS Asta Creative.
             </p>
           </div>
         </div>

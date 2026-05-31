@@ -9,7 +9,7 @@ import ServicesPage from "@/pages/ServicesPage";
 import GalleryPage from "@/pages/GalleryPage";
 import AboutPage from "@/pages/AboutPage";
 import ContactPage from "@/pages/ContactPage";
-import ChatWidget from "@/components/ChatWidget";
+import WhatsAppFab from "@/components/WhatsAppFab";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -33,7 +33,7 @@ function App() {
     <div className="App grain min-h-screen bg-background text-foreground">
       <BrowserRouter>
         <AnimatedRoutes />
-        <ChatWidget />
+        <WhatsAppFab />
       </BrowserRouter>
       <Toaster theme="dark" position="top-right" richColors />
     </div>
