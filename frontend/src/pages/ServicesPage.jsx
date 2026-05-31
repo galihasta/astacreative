@@ -12,6 +12,7 @@ import {
   Check,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import ServiceCard from "@/components/ServiceCard";
 
 const services = [
   {
@@ -76,42 +77,15 @@ const ServicesPage = () => {
         </p>
       </section>
 
-      <section className="max-w-7xl mx-auto px-6 lg:px-10 pb-24">
+      <section className="max-w-7xl mx-auto px-6 lg:px-10 pb-24" style={{ perspective: 1500 }}>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((s, i) => (
-            <motion.div
+            <ServiceCard
               key={s.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.08, duration: 0.6 }}
-              className="relative card-elev rounded-2xl border border-white/10 bg-[#101010] p-8 overflow-hidden"
-              data-testid={`service-${i}`}
-            >
-              <div className="absolute top-0 right-0 h-32 w-32 rounded-full bg-amber/10 blur-3xl" />
-              <div className="relative h-14 w-14 rounded-xl bg-amber/15 border border-amber/40 flex items-center justify-center text-amber mb-6">
-                <s.icon className="h-7 w-7" />
-              </div>
-              <p className="text-[10px] uppercase tracking-[0.25em] text-amber">
-                {s.sub}
-              </p>
-              <h3 className="font-heading text-2xl font-semibold text-white mt-2 tracking-tight">
-                {s.title}
-              </h3>
-              <p className="text-sm text-white/60 mt-3 leading-relaxed">
-                {s.desc}
-              </p>
-              <ul className="mt-6 space-y-2">
-                {s.points.map((p) => (
-                  <li
-                    key={p}
-                    className="flex items-center gap-2 text-sm text-white/75"
-                  >
-                    <Check className="h-4 w-4 text-amber" /> {p}
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
+              service={s}
+              index={i}
+              testid={`service-${i}`}
+            />
           ))}
         </div>
       </section>
