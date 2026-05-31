@@ -16,4 +16,16 @@ export default defineConfig({
     port: 3000,
     host: true,
   },
+  optimizeDeps: {
+    esbuildOptions: {
+      loader: {
+        ".js": "jsx",
+      },
+    },
+  },
+  esbuild: {
+    loader: "jsx",
+    include: /src\/.*\.js$/,
+    exclude: [],
+  },
 });
