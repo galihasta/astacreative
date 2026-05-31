@@ -76,7 +76,7 @@ const ChatWidget = () => {
         transition={{ delay: 1, type: "spring", stiffness: 200, damping: 18 }}
         onClick={() => setOpen((v) => !v)}
         data-testid="chat-fab"
-        className="fixed bottom-6 right-6 z-[55] h-14 w-14 rounded-full bg-amber text-black flex items-center justify-center glow-amber hover:scale-110 transition-transform"
+        className="fixed bottom-24 right-6 z-[999] h-14 w-14 rounded-full bg-amber text-black flex items-center justify-center glow-amber hover:scale-110 transition-transform"
         aria-label="Open chat"
       >
         {open ? <X className="h-6 w-6" /> : <MessageCircle className="h-6 w-6" />}
@@ -89,7 +89,7 @@ const ChatWidget = () => {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 24, scale: 0.96 }}
             transition={{ duration: 0.3, ease: [0.2, 0.8, 0.2, 1] }}
-            className="fixed bottom-24 right-6 z-[55] w-[92vw] max-w-[400px] h-[560px] rounded-2xl border border-white/10 bg-[#0F0F0F] shadow-2xl overflow-hidden flex flex-col"
+            className="fixed bottom-44 right-6 z-[999] w-[92vw] max-w-[400px] h-[560px] rounded-2xl border border-white/10 bg-[#0F0F0F] shadow-2xl overflow-hidden flex flex-col"
             data-testid="chat-window"
           >
             <div className="px-5 py-4 border-b border-white/10 flex items-center gap-3 bg-[#121212]">
