@@ -114,17 +114,15 @@ const ChatWidget = () => {
               {messages.map((m, i) => (
                 <div
                   key={i}
-                  className={`flex ${
-                    m.role === "user" ? "justify-end" : "justify-start"
-                  }`}
+                  className={`flex ${m.role === "user" ? "justify-end" : "justify-start"
+                    }`}
                 >
                   <div
                     data-testid={`chat-msg-${m.role}-${i}`}
-                    className={`max-w-[80%] px-4 py-2.5 rounded-2xl text-sm leading-relaxed ${
-                      m.role === "user"
+                    className={`max-w-[80%] px-4 py-2.5 rounded-2xl text-sm leading-relaxed ${m.role === "user"
                         ? "bg-amber text-black rounded-br-sm"
                         : "bg-[#1A1A1A] text-white/90 border border-white/10 rounded-bl-sm"
-                    }`}
+                      }`}
                   >
                     {m.content}
                   </div>

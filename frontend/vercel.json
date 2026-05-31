@@ -1,7 +1,7 @@
 {
   "buildCommand": "yarn build",
   "outputDirectory": "build",
-  "installCommand": "yarn install --no-frozen-lockfile",
+  "installCommand": "yarn install",
   "framework": null,
   "rewrites": [
     {
