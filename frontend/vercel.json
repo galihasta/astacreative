@@ -1,7 +1,7 @@
 {
-  "buildCommand": "npm run build",
+  "buildCommand": "yarn build",
   "outputDirectory": "build",
-  "installCommand": "npm install --legacy-peer-deps",
+  "installCommand": "yarn install --no-frozen-lockfile",
   "framework": null,
   "rewrites": [
     {
