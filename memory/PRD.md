@@ -57,3 +57,9 @@
 - Testimonials carousel
 - Case study detail pages
 - Sora 2 video showreel section
+
+## Update 2026-05-31 (Iteration 2)
+- [x] Added cinematic page transition (REC indicator, timecode, scene labels, cinemascope bars, flying camera drone with viewfinder) — every route change feels like a film camera "shooting" the next scene
+- [x] Replaced AI chat widget with direct WhatsApp FAB (+62 812 8888 0000 placeholder) — prefilled message
+- [x] Removed AI demo generative from backlog per user decision
+- Files: /app/frontend/src/components/CinematicTransition.jsx, WhatsAppFab.jsx
