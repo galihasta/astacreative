@@ -1,0 +1,86 @@
+{
+  "theme_and_archetype": {
+    "theme": "DARK",
+    "archetype": "Archetype 2 (Performance Pro) / Archetype 4 (High-Contrast)",
+    "description": "A cinematic, moody, Godly-style 3D dark mode experience. High contrast structural elements on a deep obsidian canvas with stark white text and electric amber glowing accents representing 'AI optimization'."
+  },
+  "typography": {
+    "heading_font": "Outfit",
+    "body_font": "Manrope",
+    "notes": "Outfit for tech-focused, geometric headings (tracking-tighter). Manrope for highly legible body copy. NO INTER. Large expressive typography for heroes (text-5xl to 6xl max, tracking-tighter). Overlines in uppercase + tracking-[0.2em]."
+  },
+  "color_palette": {
+    "background": "#0A0A0A",
+    "foreground": "#FFFFFF",
+    "card": "#121212",
+    "card_border": "rgba(255, 255, 255, 0.1)",
+    "primary": "#FFB000",
+    "primary_foreground": "#0A0A0A",
+    "accent": "#FFB000",
+    "muted": "#1F1F1F",
+    "muted_foreground": "#A1A1AA"
+  },
+  "layout_and_spacing": {
+    "general": "Generous spacing. p-12, p-16, p-24 for sections. High negative space.",
+    "bento_grid": "MODE A: TETRIS GRID for the portfolio/gallery. Use grid-cols-1 md:grid-cols-12 gap-8 with overlapping spans (col-span-8, col-span-4).",
+    "alignment": "Left-aligned dominant content. Asymmetrical placements to create visual tension."
+  },
+  "ui_surfaces": {
+    "glassmorphism": "Crystal Glass for sticky headers: backdrop-blur-xl bg-black/60, border-b border-white/10.",
+    "cards": "Grid Borders or Tracing Beam style. 1px border-white/10, bg-card, hover:-translate-y-1, hover:border-white/30 transition-all.",
+    "buttons": "Primary: Solid primary bg with black text. Secondary: Outline with border-white/20 hover:bg-white/10."
+  },
+  "motion_and_interactions": {
+    "page_transitions": "Use framer-motion <AnimatePresence>. Implement a cinematic 'camera shutter' or slide transition between pages (Home, Services, Gallery, About, Contact).",
+    "3d_hero": "Create a pseudo-3D interconnected network using framer-motion. Animate Lucide icons (Camera, Youtube, Instagram, Wand for AI) orbiting around a central 'AI Node'. Connect them using glowing SVG lines or spring animations. Use the 'ai_camera_core' background behind it.",
+    "hover": "Scale down images slightly on hover in the gallery. High-contrast state changes."
+  },
+  "components_needed": [
+    "Framer Motion for page transitions and 3D orbiting node animation",
+    "Lucide React for UI and orbiting icons",
+    "React Fast Marquee for 'Smart Content Studio AI' ticker tape across the screen",
+    "Floating Action Button (FAB) for 'CS Asta Creative' AI Chatbot fixed bottom-right",
+    "Bento grid for Image Gallery"
+  ],
+  "image_urls": [
+    {
+      "url": "https://static.prod-images.emergentagent.com/jobs/056936a9-f2e5-421b-ba5a-d34211c8877a/images/ba73290784d35c51ba9dee553c2c665f0eb010bdd3d82ae3079ceb77b603c1ec.png",
+      "category": "hero_background",
+      "description": "Cinematic AI core node. Place this in the Hero section as a dark backdrop, opacity around 40-50% (bg-black/50 overlay) with the orbiting 3D icon network floating in front."
+    },
+    {
+      "url": "https://static.prod-images.emergentagent.com/jobs/056936a9-f2e5-421b-ba5a-d34211c8877a/images/89760e36cc490426e7d01e1b13a5be98d6a9e0431dbcf8368ff7cf081c56f57b.png",
+      "category": "services_background",
+      "description": "Social Media & AI network glowing in space. Great for the Services or Social Media Optimization section."
+    },
+    {
+      "url": "https://static.prod-images.emergentagent.com/jobs/056936a9-f2e5-421b-ba5a-d34211c8877a/images/df1efef27f0de52e858dd166c175bfc5d83f39f7f3b1eb5d1a960f6b16db2b98.png",
+      "category": "gallery_large",
+      "description": "High-end robotic camera arm studio setup. Use in the gallery as a col-span-8 or prominent bento item."
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTN8MHwxfHNlYXJjaHwxfHxkYXJrJTIwY2FtZXJhJTIwbGlnaHRpbmclMjBzdHVkaW98ZW58MHx8fHwxNzgwMTkzOTMwfDA&ixlib=rb-4.1.0&q=85",
+      "category": "gallery",
+      "description": "Camera studio set up"
+    },
+    {
+      "url": "https://images.pexels.com/photos/28277575/pexels-photo-28277575.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "category": "gallery",
+      "description": "Photography studio with cameras"
+    },
+    {
+      "url": "https://images.pexels.com/photos/31726559/pexels-photo-31726559.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "category": "gallery",
+      "description": "Podcasting setup"
+    }
+  ],
+  "instructions_to_main_agent": [
+    "Use standard React and Tailwind classes to build out the multi-page structure with react-router-dom.",
+    "Implement the 'Godly.website' dark mode aesthetic: absolute minimal chrome, very dark background, subtle 1px white/10 borders, electric amber highlights.",
+    "Build a robust 3D-like hero using Framer Motion: A central pulsing AI node (Wand/Brain icon) with surrounding nodes (Camera, Mic, Smartphone, Instagram/Youtube icons) orbiting in a continuous circle (animate: { rotate: 360 }) inside a perspective container.",
+    "In the global CSS, import Outfit and Manrope from Google Fonts.",
+    "Create a Floating Action Button for 'CS Asta Creative' that opens a mock chatbot widget.",
+    "Apply 'data-testid' to all interactive components.",
+    "Ensure all copy is bilingual (Indonesian priority) regarding digital marketing, content creation, and AI integration."
+  ]
+}
